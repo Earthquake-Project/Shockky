@@ -208,7 +208,7 @@ namespace Shockky.Sandbox
             Span<byte> buffer = bitmapDataChunk.Data.AsSpan();
 
             int width = bitmapDataChunk.Width < bitmapDataChunk.TotalWidth ? bitmapDataChunk.Width : bitmapDataChunk.TotalWidth;
-
+            
             using var image = new Image<Bgra32>(bitmapDataChunk.Width, bitmapDataChunk.Height);
             for (int y = 0; y < bitmapDataChunk.Height; y++)
             {
